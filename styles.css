@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* justify-content: center; */
+}
+
+textarea {
+    resize: none;
+}
+
+
+#main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: grey; */
+}
+
+#header {
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+#edge-input {
+    width: 15%;
+    height: 50%;
+}
+
+#cy {
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid black; */
+}
+
+#sidebar {
+    width: 17%;
+    height: 90%;
+    /* border: 1px solid black; */
+}
+
+#legend-container {
+    padding: 1%;
+    margin-top: 5%;
+    width: 100%;
+    height: 20%;
+    border: 1px solid black;
+}
+
+#result-container {
+    margin-top: 10%;
+    /* background-color: grey; */
+}
+
+#red, #blue, #green {
+    width: 8%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 2%;
+}
+
+#red-container, #blue-container, #green-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+h1 {
+    font-size: 1.1vw;
+}
+
+#edge-input, #start-button, #query-type, #from, #to, #query-button, #visualize-button {
+    margin-left: 0.5vw;
+}
+
+button {
+    padding: 0.2vw;
+}

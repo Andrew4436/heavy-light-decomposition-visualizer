@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <div id="header">
+        <textarea  id="edge-input" placeholder="enter the edges"></textarea>
+        <button id="start-button">Show tree</button>
+        <select name="query" id="query-type">
+            <option value="max query">max query</option>
+            <option value="min query">min query</option>
+            <option value="xor query">xor query</option>
+            <option value="sum query">sum query</option>
+        </select>
+        <input type="text" id="from" placeholder="enter start node for query" autocomplete="off">
+        <input type="text" id="to" placeholder="enter end node for query" autocomplete="off">
+        <button id="query-button">query</button>
+        <button id="visualize-button">Visualize HLD info</button>
+    </div>
+    <div id="main">
+        <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
+        <script src="main.js" type="module"></script>
+        <div id="cy"></div>
+        <div id="sidebar">
+            <div id="legend-container">
+                <h1>Legend:</h1>
+                <div id="red-container">
+                    <div id="red"></div>
+                    <h1 id="red-text">- Heavy node/edge</h1>
+                </div>
+                <div id="blue-container">
+                    <div id="blue"></div>
+                    <h1>- Light node/edge</h1>
+                </div>
+                <div id="green-container">
+                    <div id="green"></div>
+                    <h1>- Lowest common ancestor</h1>
+                </div>
+            </div>
+            <div id="result-container">
+                <h1>Result:</h1>
+                <div id="result-inner-container"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
